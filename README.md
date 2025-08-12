@@ -1,10 +1,10 @@
 # QuestionCreator
 
-A Flask-based web app that generates and serves quiz questions with a simple HTML interface. The repository includes data samples, Jupyter research notebooks, server routes, and Jinja2 templates for rendering quizzes and answers.
+A Flask-based web app that generates and serves quiz questions with a simple HTML interface. The repository includes data samples, Jupyter research notebooks, server routes, and Jinja2 templates for rendering interview questions.
 
 ## Technology Stack
 
-- Backend: Flask[1]
+- Backend: Flask
 - Templates: Jinja2 (templates/)
 - Frontend assets: Static files (CSS/JS under static/)
 - Data/Content: CSV/JSON or text assets under data/ and research/ notebooks
