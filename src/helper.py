@@ -55,11 +55,18 @@ def llm_pipeline(file_path):
 
     document_ques_gen, document_answer_gen = file_processing(file_path)
 
+    '''
     llm_ques_gen_pipeline = ChatOpenAI(
         temperature = 0.3,
         model = "gpt-3.5-turbo"
     )
+    '''
 
+    llm_ques_gen_pipeline = ChatGoogleGenerativeAI(
+        model="gemini-2.0-flash-lite",
+        google_api_key=GEMINI_API_KEY,
+        temperature=0.1,
+    )
    
 
     PROMPT_QUESTIONS = PromptTemplate(template=prompt_template, input_variables=["text"])
