@@ -3,6 +3,7 @@ langchain-community
 langchain-core
 langchain_google_genai
 pypdf
+sentence-transformers
 tiktoken
 aiofiles
 fastapi
